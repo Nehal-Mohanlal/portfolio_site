@@ -138,3 +138,45 @@ li:hover {
   margin-top: 20px;
   
 }
+.btn {
+  /* border: 2px solid currentColor; */
+  border-radius: 25px;
+  color: white;
+  font-family: roboto mono;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  margin: 35px;
+  padding: 1rem 2rem;
+  background: #1f062e; 
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.btn::after {
+  background-color:white ;
+  border-radius: 25px;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.btn:hover::after {
+  transform: translate(0, 0);
+}
+.btn:hover {
+  border: 2px solid transparent;
+  color: #1f062e;
+  transform: scale(1.05);
+  will-change: transform;
+}

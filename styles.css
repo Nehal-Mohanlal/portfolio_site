@@ -193,7 +193,14 @@ ul {
   transition: 0.3s;
   flex-grow: 1;
   margin: 9px;
+  color: white;
+  background-color: #1f062e;
+  padding: 10px;
   
+}
+
+a:hover{
+  color: white
 }
 
 .card:hover {
@@ -210,6 +217,11 @@ i{
 }
 .language{
   font-size: 25px;
+}
+
+.list-group-item{ 
+  background-color: #1f062e;
+  color: white
 }
 
 
